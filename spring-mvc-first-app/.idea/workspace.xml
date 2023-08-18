@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a583dc68-1990-40a1-8450-a3c9da81275a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test-mvc/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/src/main/java/com/spring/app/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/target/classes/com/spring/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/target/classes/com/spring/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core-annotation-config/target/classes/com/spring/app/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core-annotation-config/target/classes/com/spring/app/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../test-mvc/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-mvc-first-app-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/target/spring-mvc-web-app.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/target/spring-mvc-web-app/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-mvc-web-app/target/spring-mvc-web-app/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TqXSUm4FIm5mVGDbfPJAlQ21Z2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="spring-mvc-first-app" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="contextPath" value="/" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.78" />
+          <option name="path" value="$PROJECT_DIR$/../apache-tomcat-9.0.78-windows-x64/apache-tomcat-9.0.78" />
+          <option name="version" value="9.0.78.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="spring-mvc-first-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a583dc68-1990-40a1-8450-a3c9da81275a" name="Changes" comment="" />
+      <created>1691771584849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691771584849</updated>
+    </task>
+    <servers />
+  </component>
+</project>

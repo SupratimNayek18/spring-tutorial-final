@@ -10,6 +10,9 @@ public class User {
     String name;
     int age;
 
+    public User() {
+    }
+
     // you cannot use this constructor as spring will try to inject String class dependency
 //    public User(String name, int age) {
 //        this.name = name;

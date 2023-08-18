@@ -29,5 +29,11 @@ public class Main {
 
         userService.getUserList().forEach(i-> System.out.println(i.getName()));
 
+        Student student = (Student) context.getBean(Student.class);
+
+        student.setName("Supratim");
+
+        System.out.println(student.getName()+" : "+student.getSchool().getName());
+
     }
 }

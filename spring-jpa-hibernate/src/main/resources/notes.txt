@@ -1,0 +1,7 @@
+SELECT * FROM COURSE
+
+insert into course values(1,'Spring JDBC','Supratim')
+
+delete from course where id=?
+
+delete from course where id=1
