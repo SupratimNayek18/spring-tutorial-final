@@ -1,20 +1,9 @@
 package com.spring.app.springjpahibernate.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.transaction.Transactional;
 
-@Entity
 public class Course {
-
-    @Id
     private long id;
-
-    @Column(name="name") //optional since name is same
     private String name;
-
-    @Column(name="author")
     private String author;
 
     public long getId() {
