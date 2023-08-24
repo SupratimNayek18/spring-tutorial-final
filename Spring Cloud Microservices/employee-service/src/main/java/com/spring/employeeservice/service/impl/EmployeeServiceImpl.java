@@ -7,6 +7,7 @@ import com.spring.employeeservice.entity.Employee;
 import com.spring.employeeservice.repository.EmployeeRepository;
 import com.spring.employeeservice.service.APIClient;
 import com.spring.employeeservice.service.EmployeeService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -26,11 +27,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 //    @Autowired
 //    private RestTemplate restTemplate;
 
-//    @Autowired
-//    private WebClient webClient;
-
     @Autowired
-    private APIClient apiClient;
+    private WebClient webClient;
+
+//    @Autowired
+//    private APIClient apiClient;
 
 
     @Override
@@ -45,6 +46,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @CircuitBreaker(name = "${spring.application.name}",fallbackMethod = "getDefaultDepartment")
     public APIResponseDto getEmployeeById(Long id) {
 
         //Fetching the employee from the DB
@@ -57,16 +59,16 @@ public class EmployeeServiceImpl implements EmployeeService {
 //              DepartmentDto.class);
 
 
-        //Fetching the department info from department microservice using WEB CLIENT
-//        DepartmentDto departmentDto = webClient.get()
-//                .uri("http://localhost:8080/api/departments/getDepartmentByCode/"+employee.getDepartmentCode())
-//                .retrieve()
-//                .bodyToMono(DepartmentDto.class)
-//                .block();
+//        Fetching the department info from department microservice using WEB CLIENT
+        DepartmentDto departmentDto = webClient.get()
+                .uri("http://localhost:8080/api/departments/getDepartmentByCode/"+employee.getDepartmentCode())
+                .retrieve()
+                .bodyToMono(DepartmentDto.class)
+                .block();
 
 
         //Fetching the department info from department microservice using Feign CLIENT
-        DepartmentDto departmentDto = apiClient.getDepartmentByCode(employee.getDepartmentCode());
+//        DepartmentDto departmentDto = apiClient.getDepartmentByCode(employee.getDepartmentCode());
 
         //Converting into DTO Objects
 //        DepartmentDto departmentDto = responseEntity.getBody();
@@ -80,5 +82,24 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return apiResponseDto;
 
+    }
+
+    public APIResponseDto getDefaultDepartment(Long id,Exception e){
+        DepartmentDto departmentDto = new DepartmentDto(
+                1L,
+                "sampleDepartmentName",
+                "sampleDepartmentDescription",
+                "sampleDepartmentCode"
+        );
+
+        EmployeeDto employeeDto = new EmployeeDto(
+                1L,
+                "sampleFirstName",
+                "sampleFirstName",
+                "sampleEmail",
+                "sampleDepartmentCode"
+        );
+
+        return new APIResponseDto(employeeDto,departmentDto);
     }
 }
