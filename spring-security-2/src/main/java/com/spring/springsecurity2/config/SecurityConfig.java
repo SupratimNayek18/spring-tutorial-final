@@ -17,11 +17,11 @@ import javax.sql.DataSource;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-//    @Autowired
-//    CustomUserDetailsService customUserDetailsService;
-
     @Autowired
-    DataSource dataSource;
+    CustomUserDetailsService customUserDetailsService;
+
+//    @Autowired
+//    DataSource dataSource;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -52,15 +52,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //        auth.inMemoryAuthentication().withUser("Shreyas").password(passwordEncoder().encode("1234")).roles("USER");
 //        auth.inMemoryAuthentication().withUser("Supratim").password(passwordEncoder().encode("1234")).roles("ADMIN");
 
-//        auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
+
+        //JPA Authentication using custom UserDetailsService and UserDetails
+        auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
 
 
         //Configuration for jdbc authentication
-        auth.jdbcAuthentication()
-                .dataSource(dataSource)
-                .usersByUsernameQuery("select user_name,password,enabled from user where user_name=?")
-                .authoritiesByUsernameQuery("select user_name,role from user where user_name=?")
-                .passwordEncoder(passwordEncoder());
+//        auth.jdbcAuthentication()
+//                .dataSource(dataSource)
+//                .usersByUsernameQuery("select user_name,password,enabled from user where user_name=?")
+//                .authoritiesByUsernameQuery("select user_name,role from user where user_name=?")
+//                .passwordEncoder(passwordEncoder());
 
     }
 
